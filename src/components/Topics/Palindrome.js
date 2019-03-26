@@ -28,7 +28,7 @@ export default class Palindrome extends Component{
             <div className="puzzleBox palindromePB">
             <h4>Palindrome</h4>
             <input className="inputLine" onChange={ (e) => this.handleChange(e.target.value) }></input>
-            <button className="confirmationButton" onClick={ () => this.palindromeFinder(this.state.userInput) }> Filter </button>
+            <button className="confirmationButton" onClick={ () => this.palindromeFinder(this.state.userInput) }> Is it a palindrome? </button>
             <span className="resultsBox"> Palindrome: { this.state.palindrome} </span>
             </div>
         )

@@ -32,7 +32,7 @@ export default class FilterString extends Component{
             <h4>Filter String</h4>
             <span className="puzzleText"> Bands: { JSON.stringify(this.state.bands, null, 10) } </span>
             <input className = "inputLine" onChange={ (e) => this.handleChange(e.target.value) }></input>
-            <button className="confirmationButton" onClick={ () => this.filterBands(this.state.userInput) }> Filter </button>
+            <button className="confirmationButton" onClick={ () => this.filterBands(this.state.userInput) }> Filter this string </button>
             <span className="resultsBox filterStringRB"> Filtered Bands: { JSON.stringify(this.state.filteredBands, null, 10) } </span>
             </div>
         )
